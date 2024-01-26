@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+body{
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+    height: 100vh;
+	width: 100%;
+	box-sizing: border-box;
+}
+.container{
+	height: 60vh;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 5px solid red;
+}
+.name{
+	height: 10vw;
+	width: 10vw;
+	border: 4px solid black;
+	border-radius: 10px;
+	/*position: relative;
+	top: auto;
+	right: auto;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 3s ease-in 1s;
+}
+.name:hover{
+/*	width: 5rem;*/
+	height: 5vw;
+	border-radius: 200px;
+	font-size: 2rem;
+}
+.content{
+	box-sizing: border-box;
+	height: 30vh;
+	width: 100%;
+	border: 1em solid #dadada;
+	display: flex;
+	align-items: center;
+}
+.bar-cont{
+	height: 4vh;
+	width: 50vw;
+	background-color: #dadada;
+	border-radius: 100px;
+	display: flex;
+	position: relative;
+	left: 3rem;
+	align-items: center;
+/*	overflow: hidden; it applied on all the direct child contained by it*/
+
+}
+.bars{
+	height: inherit;
+	width: 0;
+	border-radius: inherit;
+    display: flex;
+    justify-content: right;
+	background-color: aqua;
+	transition: width 4s linear;
+/*	overflow: hidden; that remove all overflow*/ 
+}
+.barn{
+   position: relative;
+   bottom: 30px;
+/*   left: 10px;*/
+   right: -25px;
+   background-color: aqua;
+   padding: 2px 5px;
+   border-radius: 10px;
+   
+}
+.bar-cont:hover > .bars{
+	width: 90%;
+}
+.barn::before{
+	content: '';
+	border-style: solid;
+	border-width: 15px 8px 0 8px;
+	border-color: aqua transparent transparent transparent;
+  /* border-color: red red red red;*/
+	position: absolute;
+	/*top: 30px;
+	right: 30px;
+	z-index: 2;*/
+	top: 20px;
+	right: 14px;
+
+	/*display: flex;
+	justify-content: center;*/
+
+}
+/*.arrow{
+	border-style: solid;
+	border-width: 18px 10px 0 10px ;
+	border-color: aqua transparent transparent transparent;
+  }
+*/
