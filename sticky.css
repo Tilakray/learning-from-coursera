@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	height: 100vh;
+	width: 100vw;
+
+}	
+.img1{
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	filter: grayscale(1);
+/*	height: 150vh;*/
+}
+.img2{
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	filter: blur(4px);
+/*	opacity: .5;*/
+backdrop-filter: blur(6px);
+}
+.img3{
+	position: sticky;
+	top: 0;
+	z-index: 4;
+}
+.img4{
+	filter: grayscale(1);
+	position: sticky;
+	top: 0;
+	z-index: 5;
+}
