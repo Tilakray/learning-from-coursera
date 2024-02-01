@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="randomColor.css">
+	<title>randomColor</title>
+</head>
+<body class="bdy">
+    <button id="btn">click me daddy!</button>
+
+   <script type="text/javascript">
+   	  const button = document.querySelector("button");
+   	  const body = document.querySelector("body");
+   	  const color = ['red', 'green', 'yellow', 'pink'];
+
+   	  body.style.backgroundColor = 'aqua';
+   	  button.addEventListener('click', function(){
+         const colorIndex = parseInt(Math.random()*color.length);
+         body.style.backgroundColor = color[colorIndex];
+   	  });
+   </script>
+</body>
+</html>
