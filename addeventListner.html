@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>addEventListner</title>
+</head>
+<body>
+  
+  <button id="myButton">click bby</button>
+  <button id="clickButton">Click Me!</button>
+  <div id="moveArea" style="width: 200px; height: 200px; background-color: lightcoral;"></div>
+
+  <script type="text/javascript">
+  	
+  	//about addEventListner -->>> element.addEventListner(eventType , handlerFuncton)
+  	// elements: mean the HTML element on which you want to apply event
+  	// event type: Specifies the type of event to listen for (for example: 'click', 'change', 'mouseover', and so on)
+  	// handlerFunction: JSON stores configuration settings, application states, and structured data in databases or files due to its simplicity and ease of use.
+  	 // Get the button element
+  const button = document.getElementById('myButton');
+  // Add event listener for 'click' event
+  button.addEventListener('click', function handleButtonClick() {
+    console.log('Button clicked!');
+  });
+  // Function to handle button click
+
+  // function handleButtonClick() {
+  //   console.log('Button clicked!');
+  // }
+
+
+  //---------------------------------------------------------------------------------------//
+   document.getElementById('clickButton').addEventListener('click', () => {
+    alert('Button clicked!');
+  });
+
+
+   //-------------------------------------------------------------------------------------------------//
+
+
+     const moveArea = document.getElementById('moveArea');
+  moveArea.addEventListener('mousemove', function(event) {
+    console.log(`Mouse coordinates - X: ${event.clientX}, Y: ${event.clientY}`);
+  });
+
+
+  </script>
+</body>
+</html>
