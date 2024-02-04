@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>windowEventListner
+	</title>
+</head>
+<body>
+  
+  <div style="height: 2000px; background-color: lightblue;">
+
+  <script type="text/javascript">
+  	
+    //Window events in JavaScript handle browser windows or document changes, triggering actions for developers to capture and respond to specific states or behaviors.
+
+    // Load event : Used when the entire document and its dependent resources (like images and stylesheets) finish loading, indicating that the page is ready.
+
+     window.addEventListener('load', function() {
+    console.log('Page and all resources loaded');
+  });
+
+     //Resize event : Starts when the browser window changes size, enabling adjustments or responses to alterations in window dimensions
+
+      window.addEventListener('resize', function() {
+    console.log('Window resized');
+  });
+
+      //Scroll event: It occurs when there is the detection of scrolling actions within the document.
+    
+      window.addEventListener('scroll', function() {
+    console.log(`Document scrolled `);
+  });
+     
+
+  </script>
+</body>
+</html>
