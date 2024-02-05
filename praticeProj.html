@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>praticeProject</title>
+</head>
+<body>
+    <button id="btn">click me daddy</button>
+    <p id="para">touch me daddy</p>
+    <input type="text" id="ent">
+    <p id="out"></p>
+    <p id="cout"></p>
+    <p id="check"></p>
+
+    <script type="text/javascript">
+    	document.getElementById('btn').onclick = () => {
+    		alert('re bahi k xe');
+    	}
+        
+        //----------------------------------//
+
+        document.getElementById('para').onmouseover = () => {
+        	confirm('touch me hadder daddy!!😣😫😌😛');
+        }
+
+        //--------------------------------------------------//
+        
+        document.getElementById('ent').onkeydown = (e) => {
+           document.getElementById('out').innerHTML = (`you pressed: ${e.key}`);
+        }
+        
+        //----------------------------------------------------------//
+
+        document.getElementById('ent').onchange = (c) => {
+           document.getElementById('cout').innerHTML = (`your last enter is: ${ent.value}`);
+        }
+
+        //-----------------------------------------------------//
+        
+
+    </script>
+</body>
+</html>
